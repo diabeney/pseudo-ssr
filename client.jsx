@@ -1,4 +1,4 @@
-import { hydrateRoot } from "react-dom/client";
-import MainLayout from "./app/layout";
+import { createRoot } from "react-dom/client";
+import App from "./app";
 
-hydrateRoot(document, <MainLayout path={window.location.pathname} />);
+createRoot(document.getElementById("root")).render(<App />);

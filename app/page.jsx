@@ -1,22 +1,24 @@
-const React = require("react");
+import { Link } from "react-router-dom";
 
-function Home() {
+export default function Home() {
   return (
-    <html>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>My app</title>
-      </head>
-      <body style={{ background: "#F1F6F9", fontFamily: "inter" }}>
-        <h1>Hello from the server!!</h1>
-        <p>write jsx on the server.</p>
-        <p>Transpile with babel</p>
-        <p>Send to client with react-dom/server api</p>
-        <p>Hydrate root</p>
-      </body>
-    </html>
+    <div id="root">
+      <h1>Hello from the server!!</h1>
+      <p>write jsx on the server.</p>
+      <p>Transpile with esbuild</p>
+      <p>Send to client with react-dom/server api</p>
+      <p>Hydrate root</p>
+      <section className="links">
+        {/* <section>
+          <Link to="/blog">Blog</Link>
+        </section>
+        <section>
+          <Link to="/users">Users</Link>
+        </section>
+        <section>
+          <Link to="/comments">Comments</Link>
+        </section> */}
+      </section>
+    </div>
   );
 }
-
-module.exports = Home;

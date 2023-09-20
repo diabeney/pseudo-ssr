@@ -1,18 +1,13 @@
-const React = require("react");
-
-function CommentsPage() {
+export default function CommentsPage() {
   return (
-    <html>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Comment Slug</title>
-      </head>
-      <body style={{ background: "#F1F6F9", fontFamily: "inter" }}>
-        <h1>Hello this is from the comments</h1>
-      </body>
-    </html>
+    <div>
+      <h2>This is the comments page</h2>
+      <ul>
+        <li>First comment</li>
+        <li>Second comment</li>
+        <li>Third comment</li>
+        <li>Fourth comment</li>
+      </ul>
+    </div>
   );
 }
-
-module.exports = CommentsPage;
